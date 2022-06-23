@@ -6,7 +6,17 @@ function DirectionButtons() {
 
   return (
     <div className="buttons group">
-      <button
+      {[45, 90, 135, 225, 270, 315].map((angle) => (
+        <button
+          type="button"
+          className="button"
+          id={`to${angle}`}
+          onClick={() => dispatch(changeDirection(angle))}
+        >
+          to {angle}
+        </button>
+      ))}
+      {/* <button
         type="button"
         className="button"
         id="to45"
@@ -53,7 +63,7 @@ function DirectionButtons() {
         onClick={() => dispatch(changeDirection("315"))}
       >
         to 315
-      </button>
+      </button> */}
     </div>
   );
 }
