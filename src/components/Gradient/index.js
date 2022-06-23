@@ -1,11 +1,15 @@
+import { useSelector } from "react-redux";
+
 function Gradient() {
-  const direction = '90deg';
-  const firstColor = 'red';
-  const lastColor = 'blue';
+  const direction = useSelector((state) => state.direction);
+  const firstColor = useSelector((state) => state.firstColor);
+  const lastColor = useSelector((state) => state.lastColor);
 
   return (
     <div
-      style={{ background: `linear-gradient(${direction},${firstColor},${lastColor})` }}
+      style={{
+        background: `linear-gradient(${direction},${firstColor},${lastColor})`,
+      }}
       id="gradient"
     />
   );

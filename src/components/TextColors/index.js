@@ -1,11 +1,12 @@
+import { useSelector } from "react-redux";
+
 function TextColors() {
-  const firstColor = 'red';
-  const lastColor = 'blue';
+  const firstColor = useSelector((state) => state.firstColor);
+  const lastColor = useSelector((state) => state.lastColor);
 
   return (
     <div id="colors">
-      <span style={{ color: firstColor }}>{firstColor}</span>
-      -
+      <span style={{ color: firstColor }}>{firstColor}</span>-
       <span style={{ color: lastColor }}>{lastColor}</span>
     </div>
   );
