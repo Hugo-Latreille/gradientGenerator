@@ -8,6 +8,7 @@ function DirectionButtons() {
     <div className="buttons group">
       {[45, 90, 135, 225, 270, 315].map((angle) => (
         <button
+          key={angle}
           type="button"
           className="button"
           id={`to${angle}`}

@@ -4,6 +4,11 @@ function TextColors() {
   const firstColor = useSelector((state) => state.firstColor);
   const lastColor = useSelector((state) => state.lastColor);
 
+  // const [firstColor, lastColor] = useSelector((state) => [
+  //   state.firstColor,
+  //   state.lastColor,
+  // ]);
+
   return (
     <div id="colors">
       <span style={{ color: firstColor }}>{firstColor}</span>-

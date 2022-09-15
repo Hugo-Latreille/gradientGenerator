@@ -1,8 +1,8 @@
-import NbColors from 'src/components/NbColors';
-import RandomButtons from 'src/components/RandomButtons';
-import TextColors from 'src/components/TextColors';
-import Gradient from 'src/components/Gradient';
-import DirectionButtons from 'src/components/DirectionButtons';
+import NbColors from "src/components/NbColors";
+import RandomButtons from "src/components/RandomButtons";
+import TextColors from "src/components/TextColors";
+import Gradient from "src/components/Gradient";
+import DirectionButtons from "src/components/DirectionButtons";
 
 // == Composant
 function App() {
